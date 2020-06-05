@@ -5,25 +5,19 @@
  */
 package negyzet_il2hzo;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.Assert.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 /**
  *
  * @author jani
  */
-public class Negyzet_IL2HZOTest {
+public class Negyzet_IL2HZONGTest {
     
-
-    
-
-    /**
-     * Test of negyzet method, of class Negyzet_IL2HZO.
-     */
     @Test
     public void testNegyzet() {
         System.out.println("negyzet");
