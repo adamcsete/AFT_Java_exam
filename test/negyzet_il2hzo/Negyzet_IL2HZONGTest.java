@@ -14,7 +14,8 @@ import org.testng.annotations.Test;
 
 /**
  *
- * @author jani
+ * @author IL2HZO
+ * @version 1.0
  */
 public class Negyzet_IL2HZONGTest {
     
