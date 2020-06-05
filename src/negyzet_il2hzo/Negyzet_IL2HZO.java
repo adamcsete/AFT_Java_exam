@@ -38,9 +38,14 @@ public class Negyzet_IL2HZO {
         JLabel label2 = new JLabel();
         JLabel label3 = new JLabel("5");
         JLabel keszito = new JLabel("Csete Ádám\ncseteadam91@gmail.com");
-        
         JTabbedPane tabpane = new JTabbedPane();
         tabpane.add("Készítő", keszito);        
+        
+        JProgressBar bar = new JProgressBar();
+        long startTime = System.nanoTime();
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime); 
+        
         
         frame.setLayout(new GridLayout(3, 3));
         frame.add(label1);
@@ -50,6 +55,7 @@ public class Negyzet_IL2HZO {
         frame.add(MButtonP);
         frame.add(GoGomb);
         frame.add(tabpane);
+        frame.add(bar);
         frame.pack();
         
         
@@ -81,6 +87,8 @@ public class Negyzet_IL2HZO {
                                              @Override
                                              public void actionPerformed(ActionEvent e) {
                                                  int eredmeny = negyzet(Integer.parseInt(label3.getText())); 
+                                                 bar.setValue(1);
+                                                 bar.setStringPainted(true);
                                                  JOptionPane.showConfirmDialog(frame, label3.getText() + " négyzete: " + Integer.toString(eredmeny), "Négyzet", JOptionPane.DEFAULT_OPTION,JOptionPane.PLAIN_MESSAGE);
                                              }
                                          });
