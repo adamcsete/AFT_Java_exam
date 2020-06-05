@@ -18,4 +18,8 @@ public class Negyzet_IL2HZO {
         // TODO code application logic here
     }
     
+    public static int negyzet(int Bemenet){
+    
+    return 0;
+    }
 }
