@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
  */
 public class Negyzet_IL2HZONGTest {
     
-    @Test
+    /*@Test
     public void testNegyzet() {
         System.out.println("negyzet");
         int Bemenet = 0;
@@ -28,6 +28,7 @@ public class Negyzet_IL2HZONGTest {
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
+    */
     
     @Test
     public void testNegyzet1() {
@@ -41,8 +42,8 @@ public class Negyzet_IL2HZONGTest {
     @Test
     public void testNegyzet2() {
         System.out.println("negyzet");
-        int Bemenet = -1;
-        int expResult = -1;
+        int Bemenet = 1;
+        int expResult = 1;
         int result = Negyzet_IL2HZO.negyzet(Bemenet);
         assertEquals(expResult, result);
     }
@@ -60,7 +61,7 @@ public class Negyzet_IL2HZONGTest {
     public void testNegyzet4() {
         System.out.println("negyzet");
         int Bemenet = 6;
-        int expResult = 30;
+        int expResult = 36;
         int result = Negyzet_IL2HZO.negyzet(Bemenet);
         assertEquals(expResult, result);
     }

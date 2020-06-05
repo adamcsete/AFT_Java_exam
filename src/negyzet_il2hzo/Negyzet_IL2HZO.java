@@ -20,6 +20,6 @@ public class Negyzet_IL2HZO {
     
     public static int negyzet(int Bemenet){
     
-    return 0;
+    return Bemenet*Bemenet;
     }
 }
