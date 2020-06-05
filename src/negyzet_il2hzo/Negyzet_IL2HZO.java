@@ -37,19 +37,24 @@ public class Negyzet_IL2HZO {
         JLabel label1 = new JLabel();
         JLabel label2 = new JLabel();
         JLabel label3 = new JLabel("5");
+        JLabel keszito = new JLabel("Csete Ádám\ncseteadam91@gmail.com");
         
-        frame.setLayout(new GridLayout(2, 3));
+        JTabbedPane tabpane = new JTabbedPane();
+        tabpane.add("Készítő", keszito);        
+        
+        frame.setLayout(new GridLayout(3, 3));
         frame.add(label1);
         frame.add(label2);
         frame.add(label3);
         frame.add(MButton0);
         frame.add(MButtonP);
         frame.add(GoGomb);
+        frame.add(tabpane);
         frame.pack();
         
         
         frame.setLocation(width/4, height/4);
-        frame.setSize(new Dimension(width/4,height/4));
+        frame.setSize(new Dimension(width/2,height/4));
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         
